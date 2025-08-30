@@ -1,0 +1,29 @@
+@import "@styles/colors";
+@import "@styles/styles";
+
+#achievementModal {
+
+  .achievement-modal-paragraph{
+    text-align: center;
+  }
+  .achievement-modal-image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    flex-direction: column;
+    gap: 2rem;
+
+    img.skill-image{
+      height: 7rem;
+      width: 7rem;
+      max-width: none;
+    }
+
+    img.badge-image{
+      height: 10rem;
+      margin-bottom: 40px;
+    }
+
+  }
+}

@@ -1,0 +1,116 @@
+@import "@styles/colors";
+
+#chartSvg{
+  flex-grow: 1;
+  height: 100%;
+  min-height: 200pt;
+
+  stroke-width: 2.5pt;
+  stroke: black;
+
+  #x-axis-arrow, #y-axis-arrow {
+    fill: none;
+  }
+
+  .y-axis-unit-division{
+    stroke-width: 1pt;
+  }
+
+  .graph-0{
+    border-color: #e9c78b;
+    fill: #806d4b;
+    stroke: #e9c78b;
+    background-color: #806d4b;
+  }
+  .graph-1{
+    border-color: #65cac7;
+    fill: #2e5c5b;
+    stroke: #65cac7;
+    background-color: #2e5c5b;
+  }
+  .graph-2{
+    border-color: #b56602;
+    fill: #8c5005;
+    stroke: #b56602;
+    background-color: #8c5005;
+  }
+  .graph-3{
+    border-color: #a0d081;
+    fill: #5d794b;
+    stroke: #a0d081;
+    background-color: #5d794b;
+  }
+  .graph-4{
+    border-color: #fdfa71;
+    fill: #83813a;
+    stroke: #fdfa71;
+    background-color: #83813a;
+  }
+  .graph-5{
+    border-color: #a9a8a8;
+    fill: #6c6b6b;
+    stroke: #a9a8a8;
+    background-color: #6c6b6b;
+  }
+  .graph-6{
+    border-color: #36A2EB;
+    fill: #1f5d86;
+    stroke: #36A2EB;
+    background-color: #1f5d86;
+  }
+  .graph-7{
+    border-color: #7e36eb;
+    fill: #451d81;
+    stroke: #7e36eb;
+    background-color: #451d81;
+  }
+  .graph-8{
+    border-color: #eb36cd;
+    fill: #8d1e7a;
+    stroke: #eb36cd;
+    background-color: #8d1e7a;
+  }
+  .graph-9{
+    border-color: #eb6636;
+    fill: #83381c;
+    stroke: #eb6636;
+    background-color: #83381c;
+  }
+  .graph-10{
+    border-color: #9aeb36;
+    fill: #446718;
+    stroke: #9aeb36;
+    background-color: #446718;
+  }
+  .graph-11{
+    border-color: #eb3636;
+    fill: #701a1a;
+    stroke: #eb3636;
+    background-color: #701a1a;
+  }
+  .graph-12{
+    border-color: #36ebb5;
+    fill: #1d7c60;
+    stroke: #36ebb5;
+    background-color: #1d7c60;
+  }
+  .graph-13{
+    border-color: #363feb;
+    fill: #23299b;
+    stroke: #363feb;
+    background-color: #23299b;
+  }
+  .graph-14{
+    border-color: #ebac36;
+    fill: #987025;
+    stroke: #ebac36;
+    background-color: #987025;
+  }
+  .graph-15{
+    border-color: #b836eb;
+    fill: #611d7c;
+    stroke: #b836eb;
+    background-color: #611d7c;
+  }
+}
+

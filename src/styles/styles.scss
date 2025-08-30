@@ -1,0 +1,21 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fullHeightWidth {
+  height: 100%;
+  width: 100%;
+}
+

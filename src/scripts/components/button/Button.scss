@@ -1,0 +1,22 @@
+@import "@styles/colors";
+
+.btn {
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+  box-shadow: 1px 1px 1px $black;
+  font-size: xx-large;
+  cursor: pointer;
+  border-style: none;
+
+  &:hover{
+    cursor: pointer;
+    background-color: $light-grey;
+  }
+}

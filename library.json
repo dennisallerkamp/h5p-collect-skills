@@ -1,0 +1,38 @@
+{
+  "title": "Collect Skills",
+  "description": "Self-assessment tool for competence development",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 1,
+  "runnable": 1,
+  "author": "Hochschule Hannover",
+  "license": "MIT",
+  "machineName": "H5P.CollectSkills",
+  "embedTypes": [
+    "iframe"
+  ],
+  "preloadedJs": [
+    {
+      "path": "dist/h5p-collect-skills.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path":"dist/h5p-collect-skills.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.VerticalTabs",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+.nav-button{
+  border: none;
+  padding: 0;
+  background: none;
+  pointer-events: all;
+
+  img{
+    width: 100px;
+    height: 100px;
+    transform: scale(0.7);
+
+    &:hover{
+      cursor: pointer;
+      transform: scale(0.6);
+    }
+  }
+
+  &:disabled{
+    opacity: 0.3;
+
+    img{
+
+      &:hover{
+        cursor: default;
+        transform: scale(0.7);
+      }
+    }
+  }
+
+  &#nav-button-home{
+    img {
+      content: url('../../images/home.svg');
+    }
+  }
+
+  &#nav-button-badge{
+    img{
+      content: url('../../images/trophy.svg');
+    }
+  }
+
+  &#nav-button-chest{
+    padding: 0 1em;
+
+    img{
+      content: url('../../images/chest.svg');
+    }
+  }
+}

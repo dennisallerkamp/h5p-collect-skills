@@ -1,0 +1,53 @@
+{
+  "name": "h5p-collect-skills",
+  "version": "1.0.1",
+  "description": "Self-assessment tool for individual competence development",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production ./node_modules/.bin/webpack",
+    "watch": "cross-env NODE_ENV=development ./node_modules/.bin/webpack --watch",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "h5p",
+    "library"
+  ],
+  "author": "Hochschule Hannover",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.17.3",
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-destructuring": "^7.17.3",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@h5p-types/h5p-core": "^0.2.0",
+    "@types/react-dom": "^18.2.24",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "babel-loader": "^8.2.3",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "prettier": "^3.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "regenerator-runtime": "^0.14.0",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.69.0",
+    "sass-loader": "^13.3.2",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-toastify": "^10.0.5"
+  }
+}

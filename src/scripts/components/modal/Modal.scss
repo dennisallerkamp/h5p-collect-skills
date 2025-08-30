@@ -1,0 +1,40 @@
+@import "@styles/colors";
+@import "@styles/styles";
+
+.modal {
+  @include flex-center;
+  @include fullHeightWidth;
+
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  background-color: $modal-background;
+
+  .modal-content {
+    @include flex-column;
+    background-color: $white;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid $grey;
+    border-radius: 10px 10px;
+    width: 90%;
+    height: fit-content;
+    position: relative;
+    gap: 40px;
+
+    @media (min-width: 700px) {
+      max-width: 800px;
+    }
+
+    .modal-headline {
+      max-width: 500px;
+
+      @media (max-width: 600px) {
+        margin-top: 2em;
+        max-width: none;
+      }
+    }
+  }
+}

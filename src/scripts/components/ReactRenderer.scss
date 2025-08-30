@@ -1,0 +1,40 @@
+@import "@styles/colors";
+@import "@styles/styles";
+
+.react-container {
+  margin: 0 auto;
+  box-shadow: 2px 2px 4px $light-grey;
+  background-size: cover;
+
+  width: 100%;
+  height: 100%;
+
+  #collect-skills {
+    @include flex-column;
+    background-image: url('../../images/background.jpg');
+
+    &.fullscreen {
+      height: 100vh !important;
+    }
+  }
+
+  // Overwriting the properties set by moodle, so that the development-view looks identical to the view in moodle
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: .9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $font-color;
+  text-align: left;
+  -webkit-text-size-adjust: 100%;
+}
+
+// Overwriting the properties set by moodle, so that the development-view looks identical to the view in moodle
+*, ::before, ::after{
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 700;
+}

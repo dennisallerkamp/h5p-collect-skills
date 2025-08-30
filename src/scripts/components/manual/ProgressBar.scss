@@ -1,0 +1,23 @@
+@import "@styles/styles";
+@import "@styles/colors";
+
+.progress-bar {
+  width: 100%;
+  @include flex-row;
+  align-items: center;
+  justify-content: center;
+
+  .progress-point {
+    height: 1.5em;
+    width: 1.5em;
+    border: 2pt solid $black;
+    border-radius: 50%;
+    margin: 0 5pt;
+
+    background-color: $white;
+
+    &.active-stage{
+      background-color: $black;
+    }
+  }
+}

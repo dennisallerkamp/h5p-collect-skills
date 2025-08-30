@@ -1,0 +1,93 @@
+@import "@styles/colors";
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1ex;
+
+  padding: 5px;
+  box-shadow: 1px 1px 2px $light-grey;
+  border-radius: 10px 10px;
+  background-color: $white;
+  cursor: pointer;
+
+  width: 100%;
+  text-align: left;
+  font-size: inherit;
+  line-height: inherit;
+  border-style: none;
+
+  &.absolved{
+    background-color: $absolved;
+  }
+
+  &.completed{
+    background-color: $completed;
+  }
+
+  .description{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    p{
+      margin: auto 5px auto 5px;
+      position: relative;
+    }
+  }
+
+  .completion-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 100%;
+
+    p{
+      font-size: 10pt;
+      margin: 0;
+    }
+  }
+
+
+}
+
+// Checkboxes of the activities
+i {
+  width: 20px;
+  height: 20px;
+}
+
+.gg-square-empty:before,
+.gg-square-plus:before,
+.gg-square-checked:before{
+  margin-left: 5px;
+  font-family: 'H5PFontAwesome4', sans-serif;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.gg-square-empty:before {
+  content: '\f096';
+}
+
+.gg-square-plus:before {
+  content: '\f196';
+}
+
+.gg-square-checked:before {
+  content: '\f046';
+}
+
+.x-times-icon{
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  font-weight: bold;
+}

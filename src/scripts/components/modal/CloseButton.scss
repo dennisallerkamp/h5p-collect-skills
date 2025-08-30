@@ -1,0 +1,18 @@
+@import "@styles/colors";
+
+.close {
+  color: $light-grey;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: $transparent;
+  border-style: none;
+  position: absolute;
+  right: 1em;
+
+  &:hover, &:focus {
+    color: $black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,32 @@
+@import "@styles/styles";
+@import "@styles/colors";
+
+@mixin listitem($color, ) {
+  background-color: $color;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.list-item {
+  &.finished {
+    @include listitem($white);
+    box-shadow: 1px 1px 1px 1px $black;
+  }
+
+  &.unfinished {
+    @include listitem($grey);
+    color: $white;
+    margin: 0;
+  }
+
+  &.description {
+    flex-grow: 1;
+  }
+}
+
+.counter {
+  background-color: $white;
+  box-shadow: 1px 1px 1px 1px $black;
+  border-radius: 10px;
+  padding: 6px;
+}

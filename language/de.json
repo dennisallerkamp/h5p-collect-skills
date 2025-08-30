@@ -1,0 +1,300 @@
+{
+  "semantics": [
+    {
+      "label": "Skills",
+      "entity": "Kategorie",
+      "field": {
+        "label": "Skill-Einstellungen",
+        "fields": [
+          {
+            "label": "Skill-Name",
+            "description": "Geben Sie einen Namen für den Skill an."
+          },
+          {
+            "label": "Skill-Bild",
+            "description": "Geben Sie ein Bild für den Skill an. Das Bild sollte ...\n...mindestens 128x128 Pixel groß sein.\n...quadratisch sein.\n...ggf. einen transparenten Hintergrund besitzen."
+          },
+          {
+            "label": "Tätigkeiten",
+            "entity": "Tätigkeit",
+            "widgets": [
+              {
+                "label": "Standard"
+              }
+            ],
+            "field": {
+              "label": "Tätigkeit-Einstellungen",
+              "fields": [
+                {
+                  "label": "Tätigkeits-Text",
+                  "placeholder": "Ich habe in internationalen Gruppen gearbeitet."
+                },
+                {
+                  "label": "Einmalige Tätigkeit",
+                  "description": "Geben Sie an, ob die Tätigkeit nur einmalig ausführbar ist."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Translations",
+      "fields": [
+        {
+          "label": "Übersetzung der Überschrift des ersten Schritts der Anleitung",
+          "default": "Wilkommen bei @appname!"
+        },
+        {
+          "label": "Übersetzung des ersten Schritts der Anleitung",
+          "default": "Dein Selbsteinschätzungstool zur digitalen Kompetenzüberprüfung. Ziel von @appname ist es, dir zu helfen, dir deiner Stärken und Kompetenzen bewusst zu werden."
+        },
+        {
+          "label": "Übersetzung der Überschrift des zweiten Schritts der Anleitung",
+          "default": "Nutze @appname so oft wie du magst"
+        },
+        {
+          "label": "Übersetzung des zweiten Schritts der Anleitung",
+          "default": "Sammle und dokumentiere projektbezogene Tätigkeiten in der Schatztruhe. Dabei können viele Tätigkeiten auch mehrfach absolviert werden."
+        },
+        {
+          "label": "Übersetzung der Überschrift des dritten Schritts der Anleitung",
+          "default": "Verfolge deinen Fortschritt"
+        },
+        {
+          "label": "Übersetzung des dritten Schritts der Anleitung",
+          "default": "Deinen persönlichen Kompetenz-Fortschritt zeigt dir ein Klick auf das Trophäe-Icon: Finde heraus was @appname dir bietet..."
+        },
+        {
+          "label": "Beschriftung des weiter-Buttons in der Anleitung",
+          "default": "Weiter"
+        },
+        {
+          "label": "Beschriftung des zurück-Buttons in der Anleitung",
+          "default": "Zurück"
+        },
+        {
+          "label": "Beschriftung des weiter-Buttons in dem letzten Schritt der Anleitung",
+          "default": "Los geht's"
+        },
+        {
+          "label": "Titel der Abzeichen-Seite",
+          "default": "Abzeichen"
+        },
+        {
+          "label": "Name des 1. Abzeichens",
+          "default": "Der Anfang"
+        },
+        {
+          "label": "Beschreibung des 1. Abzeichens",
+          "default": "Absolviere zum ersten Mal eine Tätigkeit."
+        },
+        {
+          "label": "Name des 2. Abzeichens",
+          "default": "Fachwissen"
+        },
+        {
+          "label": "Beschreibung des 2. Abzeichens",
+          "default": "Absolviere eine Tätigkeit mindestens 5-mal."
+        },
+        {
+          "label": "Name des 3. Abzeichens",
+          "default": "Allrounder"
+        },
+        {
+          "label": "Beschreibung des 3. Abzeichens",
+          "default": "Absolviere aus jeder Kategorie mindestens eine Tätigkeit."
+        },
+        {
+          "label": "Name des 4. Abzeichens",
+          "default": "Experte"
+        },
+        {
+          "label": "Beschreibung des 4. Abzeichens",
+          "default": "Absolviere jede Tätigkeit mindestens 1-mal."
+        },
+        {
+          "label": "Name des 5. Abzeichens",
+          "default": "Ambitioniert"
+        },
+        {
+          "label": "Beschreibung des 5. Abzeichens",
+          "default": "Absolviere an einem Tag mindestens 5 Tätigkeiten."
+        },
+        {
+          "label": "Name des 6. Abzeichens",
+          "default": "Dauerläufer"
+        },
+        {
+          "label": "Beschreibung des 6. Abzeichens",
+          "default": "Nutze das Tool jeden Tag."
+        },
+        {
+          "label": "Name des 7. Abzeichens",
+          "default": "Gesamtzahl-Tätigkeiten"
+        },
+        {
+          "label": "Beschreibung des 7. Abzeichens",
+          "default": "Kumulierte Anzahl der absolvierten Tätigkeiten aus allen Skills."
+        },
+        {
+          "label": "Name des 8. Abzeichens",
+          "default": "Abzeichen Meister"
+        },
+        {
+          "label": "Beschreibung des 8. Abzeichens",
+          "default": "Gesamtzahl der gesammelten Abzeichen."
+        },
+        {
+          "label": "Bezeichnung von nicht freigeschaltetem Abzeichen",
+          "default": "Nicht freigeschaltet."
+        },
+        {
+          "label": "Bezeichnung von freigeschaltetem Abzeichen",
+          "default": "Freigeschaltet."
+        },
+        {
+          "label": "Bezeichnung Abzeichen auf bestimmtem Level",
+          "default": "Freigeschaltet: Level @level"
+        },
+        {
+          "label": "Titel der Skills-Seite",
+          "default": "Skills"
+        },
+        {
+          "label": "Erklärung der verbleibenden Tätigkeiten für das nächste Level",
+          "default": "Absolviere @remainingActivities weitere Tätigkeiten, um einen Level aufzusteigen"
+        },
+        {
+          "label": "Erklärung, dass das maximale Level erreicht wurde",
+          "default": "Da hast das maximale Level erreicht!"
+        },
+        {
+          "label": "Übersetzung für Tätigkeit",
+          "default": "Tätigkeit"
+        },
+        {
+          "label": "Beschreibung des absolviert-Datums",
+          "default": "Absolviert am @date"
+        },
+        {
+          "label": "Beschreibung des zuletzt-absolviert-Datums",
+          "default": "Zuletzt absolviert am @date"
+        },
+        {
+          "label": "Überschrift für absolvierte Tätigkeiten",
+          "default": "Absolvierte Tätigkeiten"
+        },
+        {
+          "label": "Überschrift für nicht absolvierte Tätigkeiten",
+          "default": "Nicht absolvierte Tätigkeiten"
+        },
+        {
+          "label": "Beschriftung des Tätigkeit-absolvieren-Buttons",
+          "default": "Tätigkeit absolvieren"
+        },
+        {
+          "label": "Beschriftung des Absolvieren-rückgängig-Buttons",
+          "default": "Absolvieren rückgängig"
+        },
+        {
+          "label": "Bezeichnung für absolviert-Status",
+          "default": "Absolviert"
+        },
+        {
+          "label": "Bezeichnung für nicht-absolviert-Status",
+          "default": "Nicht absolviert"
+        },
+        {
+          "label": "Bezeichnung für x-mal-absolviert-Status",
+          "default": "@times mal absolviert"
+        },
+        {
+          "label": "Beschriftung des Entwicklungsgraph-Buttons",
+          "default": "Entwicklung"
+        },
+        {
+          "label": "X-Achsenbeschriftung des Entwicklungsgraphen",
+          "default": "Zeitraum in @unit (@firstActivityDate bis heute)"
+        },
+        {
+          "label": "Y-Achsenbeschriftung des Entwicklungsgraphen",
+          "default": "Kum. absolvierte Tätigkeiten (heute @totalAccActivities)"
+        },
+        {
+          "label": "Name der Einheit für Tage",
+          "default": "Tagen"
+        },
+        {
+          "label": "Name der Einheit für Wochen",
+          "default": "Wochen"
+        },
+        {
+          "label": "Nachricht die angezeigt wird, wenn eine Tätigkeit erfolgreich absolviert wurde",
+          "default": "T&auml;tigkeit erfolgreich absolviert!"
+        },
+        {
+          "label": "Nachricht die angezeigt wird, wenn das Absolvieren einer Tätigkeit erfolgreich rückgängig gemacht wurde",
+          "default": "Absolvieren der Tätigkeit erfolgreich rückgängig gemacht!"
+        },
+        {
+          "label": "Nachricht die angezeigt wird, wenn das eine Tätigkeit bereits abgeschlossen wurde",
+          "default": "T&auml;tigkeit wurde bereits absolviert!"
+        },
+        {
+          "label": "Überschrift des Modals welches bei einer neuen Errungenschaft angezeigt wird.",
+          "default": "Herzlichen Glückwunsch!"
+        },
+        {
+          "label": "Text des Modals welches angezeigt wird, wenn ein neues Abzeichen erhalten wurde.",
+          "default": "Du hast ein neues Abzeichen erhalten: : @badgeName"
+        },
+        {
+          "label": "Text des Modals welches angezeigt wird, wenn ein neues Skill-Level erhalten wurde.",
+          "default": "Du hast Level @newLvl des Skills @skillName erreicht."
+        },
+        {
+          "label": "(Aria-)Beschreibung des Buttons der die Tätigkeiten-Seite öffnet.",
+          "default": "Tätigkeiten-Seite öffnen"
+        },
+        {
+          "label": "(Aria-)Beschreibung des Buttons der ein Modal schließt.",
+          "default": "Modal schließen"
+        },
+        {
+          "label": "(Aria-)Beschreibung des Buttons der die Anleitung öffnet",
+          "default": "Anleitung öffnen"
+        },
+        {
+          "label": "(Aria-)Beschreibung des Buttons der den Vollbildmodus aktiviert",
+          "default": "Anwendung im Vollbildmodus öffnen"
+        },
+        {
+          "label": "(Aria-)Beschreibung des Buttons der die Abzeichen-Seite öffnet",
+          "default": "Zur Abzeichen-Seite wechseln"
+        },
+        {
+          "label": "(Aria-)Beschreibung des Buttons der die Skill-Seite öffnet",
+          "default": "Zur Skill-Seite wechseln"
+        },
+        {
+          "label": "(Aria-)Beschreibung des Buttons der die Details eines Skills öffnet",
+          "default": "Details des Skills @skillName ansehen"
+        },
+        {
+          "label": "(Aria-)Beschreibung des Buttons der die Details eines Abzeichens öffnet",
+          "default": "Details des Abzeichens @badgeName ansehen"
+        },
+        {
+          "label": "(Aria-)Beschreibung des Buttons der das Modal öffnet welches es erlaubt eine Tätigkeit zu absolvieren/das Absolvieren dieser Tätigkeit rückgängig zu machen",
+          "default": "Bearbeitet den Status der Tätigkeit @activitydescr"
+        },
+        {
+          "label": "(Aria-)Beschreibung des Bildes von einem Abzeichen",
+          "default": "Abbildung des Abzeichens @badgeName"
+        }
+      ]
+    }
+  ]
+}

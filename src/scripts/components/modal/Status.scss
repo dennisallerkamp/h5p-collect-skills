@@ -1,0 +1,27 @@
+@import "@styles/colors";
+
+.status {
+  text-align: center;
+  box-shadow: 1px 1px 1px 2px $light-grey;
+  border-radius: 10px;
+  padding: 4px;
+  margin: 4px;
+
+  // BADGE STATUS
+  &.free, &.lvl1, &.lvl2, &.lvl3 {
+    background-color: $completed;
+  }
+
+  &.locked {
+    background-color: $light-grey;
+  }
+
+  // ACTIVITY STATUS
+  &.absolved {
+    background-color: $absolved;
+  }
+
+  &.completed {
+    background-color: $completed;
+  }
+}

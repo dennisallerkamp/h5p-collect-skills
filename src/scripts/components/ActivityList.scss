@@ -1,0 +1,7 @@
+@import "@styles/styles";
+
+.activity-list {
+  @include flex-column;
+  gap: 10px;
+  overflow-x: scroll;
+}

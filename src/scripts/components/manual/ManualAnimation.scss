@@ -1,0 +1,348 @@
+@import "@styles/colors";
+
+#manualModal {
+  #manualModalImageContainer {
+    overflow: visible;
+
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .manual_animation_container {
+    float: left;
+  }
+
+  #collectSkillsIconManualAnimation {
+
+    height: 125pt;
+    width: 285pt;
+    img{
+      max-width: 100%;
+    }
+
+
+    #manualAnimationCollectSkillsIcon {
+      height: 125pt;
+      content: url("../../../images/manual/collect-skills-logo.svg");
+    }
+  }
+
+  #activityCompletionManualAnimation {
+
+    font-size: 1pt;
+    height: 220pt;
+    width: 340pt;
+    overflow: visible;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    @media screen and (max-width: 340pt){
+      font-size: 0.25vw;
+    }
+
+    img {
+      height: 25em;
+      position: relative;
+      margin: 5em;
+      z-index: 1;
+
+      content: url("../../../images/manual/collect-skills_activity.svg");
+    }
+
+    #manual_animation_skill {
+      top: 0;
+      left: 0;
+      height: 40em;
+
+      content: url("../../../images/manual/collect-skills-skill.svg");
+    }
+
+    #manual_animation_activity_1 {
+      top: 0;
+      animation-name: activity_activity_manual;
+      animation-duration: 10s;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    #manual_animation_activity_done {
+      top: -288em;
+      animation-name: activity_done_activity_manual;
+      animation-duration: 10s;
+      z-index: 3;
+
+      content: url("../../../images/manual/collect-skills_activity_done.svg");
+    }
+
+    #manual_animation_chest {
+      height: 75em;
+      top: -115em;
+      left: 190em; //235pt;
+      z-index: 0;
+
+      animation-name: chest_activity_manual;
+      animation-duration: 10s;
+
+      content: url("../../../images/chest.svg");
+    }
+
+    #manual_animation_cursor {
+      z-index: 2;
+      height: 20em;
+
+      animation-name: cursor_activity_manual;
+      animation-duration: 10s;
+      opacity: 0;
+
+      content: url("../../../images/manual/mouse_cursor.svg");
+    }
+
+    #manual_animation_clickfx {
+      top: -266em;
+      left: 15em;
+      animation-name: clickfx_activity_manual;
+      animation-duration: 10s;
+      z-index: 3;
+      opacity: 0;
+
+      content: url("../../../images/manual/click_fx.svg");
+    }
+
+    @keyframes cursor_activity_manual {
+      0% {
+        transform: translate(240em, -200em);
+        opacity: 1;
+      }
+      35% {
+        transform: translate(40em, -130em);
+      }
+      37.9% {
+        transform: translate(40em, -130em);
+      }
+      38% {
+        transform: translate(40em, -130em) scale(0.8);
+      }
+      40% {
+        transform: translate(40em, -130em) scale(0.8);
+      }
+
+      75% {
+        transform: translate(195em, -27em) scale(0.8);
+      }
+      78.0% {
+        transform: translate(195em, -27em) scale(0.8);
+      }
+      78.1% {
+        transform: translate(195em, -27em);
+      }
+      90% {
+        transform: translate(195em, -27em);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(195em, -27em);
+        opacity: 0;
+      }
+    }
+
+    @keyframes chest_activity_manual {
+      62% {
+        transform: scale(1);
+      }
+      65% {
+        transform: scale(1.5);
+      }
+      80% {
+        transform: scale(1.5);
+      }
+      85% {
+        transform: scale(1);
+      }
+      90% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes activity_activity_manual {
+      0% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+      40% {
+        transform: translate(0, 0);
+      }
+      75% {
+        transform: translate(155em, 103em);
+      }
+      78% {
+        transform: translate(155em, 103em);
+        opacity: 1;
+      }
+      85% {
+        opacity: 0;
+        transform: translate(155em, 103em) scale(0.1);
+      }
+      90% {
+        transform: translate(200em, 103em) scale(0.1);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(200em, 103em) scale(0.1);
+        opacity: 0;
+      }
+    }
+
+    @keyframes clickfx_activity_manual {
+      0% {
+        opacity: 0;
+      }
+      37.9% {
+        opacity: 0;
+      }
+      38% {
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1.5);
+        opacity: 0;
+      }
+      90% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes activity_done_activity_manual {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      90% {
+        opacity: 0;
+        transform: scale(0.9) translate(0, 44em);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translate(0, 0);
+      }
+    }
+  }
+
+  #trophyManualAnimation {
+    height: 120pt;
+    width: 110pt;
+
+    #trophyAnimationContainer {
+      overflow: hidden;
+      height: 120pt;
+      width: 110pt;
+    }
+
+    #lightStreak {
+      position: relative;
+      height: 20pt;
+      width: 500pt;
+      opacity: 0.5;
+
+      rotate: -45deg;
+      top: 70pt;
+      left: -100pt;
+
+      background-image: linear-gradient($transparent, $white, $transparent);
+      mix-blend-mode: screen;
+
+      animation-timing-function: linear;
+      animation-name: lightstreak_click_trophy;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+
+    #manualAnimationTrophy {
+      position: relative;
+      height: 120pt;
+
+      content: url('../../../images/trophy.svg');
+    }
+
+    @keyframes lightstreak_click_trophy {
+      0% {
+        transform: translate(0, -300pt);
+      }
+      20% {
+        transform: translate(0, 60pt);
+      }
+      100% {
+        transform: translate(0, 60pt);
+      }
+    }
+  }
+
+  #moodleSaveManualAnimation {
+
+    height: 100pt;
+    width: 250pt;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    img {
+      position: relative;
+    }
+
+    #manualAnimationMoodleLogo {
+      top: 0;
+      height: 50pt;
+      opacity: 0;
+
+      animation-name: moodle_icon_save_manual;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+
+      content: url("../../../images/manual/moodle-logo.svg");
+    }
+
+    #manualAnimationSaveIcon {
+      height: 50pt;
+      top: -10pt;
+
+      animation-timing-function: ease-in-out;
+      animation-name: save_icon_save_manual;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+
+      content: url("../../../images/manual/save_icon.svg");
+    }
+
+    @keyframes save_icon_save_manual {
+      0% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(0, -10pt);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+    @keyframes moodle_icon_save_manual {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+}

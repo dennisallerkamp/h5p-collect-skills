@@ -1,0 +1,73 @@
+.badge-image{
+  &.badge-image_0 {
+    content: url('../../../images/badges/Der_Anfang_Locked.svg');
+    &.free{
+      content: url('../../../images/badges/Der_Anfang.svg');
+    }
+  }
+  &.badge-image_1 {
+    content: url('../../../images/badges/Fachwissen_Locked.svg');
+    &.free{
+      content: url('../../../images/badges/Fachwissen.svg');
+    }
+  }
+  &.badge-image_2 {
+    content: url('../../../images/badges/Allrounder_Locked.svg');
+    &.free{
+      content: url('../../../images/badges/Allrounder.svg');
+    }
+  }
+  &.badge-image_3 {
+    content: url('../../../images/badges/Experte_Locked.svg');
+    &.free{
+      content: url('../../../images/badges/Experte.svg');
+    }
+  }
+  &.badge-image_4 {
+    content: url('../../../images/badges/Ambitioniert_Locked.svg');
+    &.free{
+      content: url('../../../images/badges/Ambitioniert.svg');
+    }
+  }
+  &.badge-image_5 {
+    content: url('../../../images/badges/Abzeichen-Meister_Locked.svg');
+    &.lvl1{
+      content: url('../../../images/badges/Abzeichen-Meister_Lvl1.svg');
+    }
+    &.lvl2{
+      content: url('../../../images/badges/Abzeichen-Meister_Lvl2.svg');
+    }
+    &.lvl3{
+      content: url('../../../images/badges/Abzeichen-Meister_Lvl3.svg');
+    }
+  }
+  &.badge-image_6 {
+    content: url('../../../images/badges/Dauerlaeufer_Locked.svg');
+    &.lvl1{
+      content: url('../../../images/badges/Dauerlaeufer_Lvl1.svg');
+    }
+    &.lvl2{
+      content: url('../../../images/badges/Dauerlaeufer_Lvl2.svg');
+    }
+    &.lvl3{
+      content: url('../../../images/badges/Dauerlaeufer_Lvl3.svg');
+    }
+  }
+  &.badge-image_7 {
+    content: url('../../../images/badges/Gesamtact_Locked.svg');
+    &.lvl1{
+      content: url('../../../images/badges/Gesamtact_Lvl1.svg');
+    }
+    &.lvl2{
+      content: url('../../../images/badges/Gesamtact_Lvl2.svg');
+    }
+    &.lvl3{
+      content: url('../../../images/badges/Gesamtact_Lvl3.svg');
+    }
+  }
+}
+
+
+
+
+

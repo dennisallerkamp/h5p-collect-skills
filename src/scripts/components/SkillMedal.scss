@@ -1,0 +1,61 @@
+@import "@styles/colors";
+
+.skill-medal{
+  width: calc(100% - 30px);
+  height: calc(60px + 1rem);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p.skill-level{
+    position: absolute;
+    width: calc(100% - 145px - 4rem);
+    bottom: calc(1rem + 22px);
+    text-align: center;
+    font-size: 25px;
+    color: $dark-green;
+    margin: 0;
+    z-index: 1;
+  }
+
+  img.skill-medal{
+    z-index: 0;
+    bottom: 1rem;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+  }
+
+  &.lvl1{
+    img.skill-medal{
+      content: url('../../images/skill-medals/skill-medal_lvl1.svg');
+    }
+  }
+
+  &.lvl2{
+    img.skill-medal {
+      content: url('../../images/skill-medals/skill-medal_lvl2.svg');
+    }
+  }
+  &.lvl3{
+    img.skill-medal {
+      content: url('../../images/skill-medals/skill-medal_lvl3.svg');
+    }            }
+  &.lvl4{
+    img.skill-medal {
+      content: url('../../images/skill-medals/skill-medal_lvl4.svg');
+    }
+  }
+  &.lvl5{
+    img.skill-medal {
+      content: url('../../images/skill-medals/skill-medal_lvl5.svg');
+    }
+    p {
+      color: $white;
+    }
+  }
+}
+
+
+

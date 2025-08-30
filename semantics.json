@@ -1,0 +1,521 @@
+[
+  {
+    "name": "skills",
+    "type": "list",
+    "label": "Skills",
+    "entity": "Kategorie",
+    "min": 1,
+    "max": 12,
+    "field": {
+      "name": "category_group",
+      "type": "group",
+      "label": "Kategorie-Einstellungen",
+      "fields": [
+        {
+          "label": "Kategoriename",
+          "name": "name",
+          "type": "text",
+          "optional": false,
+          "description": "Geben Sie einen Namen für die Kategorie an."
+        },
+        {
+          "label": "Kategorie-Bild",
+          "name": "image",
+          "type": "image",
+          "optional": true,
+          "description": "Geben Sie ein Bild für die Kategorie an. Das Bild sollte ...\n...mindestens 128x128 Pixel groß sein.\n...quadratisch sein.\n...ggf. einen transparenten Hintergrund besitzen."
+        },
+        {
+          "name": "activities",
+          "type": "list",
+          "label": "Kategorien",
+          "entity": "Tätigkeit",
+          "min": 1,
+          "max": 20,
+          "widgets": [
+            {
+              "name": "VerticalTabs",
+              "label": "Default",
+              "importance": "high"
+            }
+          ],
+          "field": {
+            "name": "activity_group",
+            "type": "group",
+            "label": "Tätigkeits-Einstellungen",
+            "fields": [
+              {
+                "name": "description",
+                "type": "text",
+                "label": "Tätigkeits-Text",
+                "placeholder": "Ich habe in internationalen Gruppen gearbeitet.",
+                "optional": false
+              },
+              {
+                "name": "isOneTime",
+                "type": "boolean",
+                "label": "Einmalige Tätigkeit",
+                "default": false,
+                "description": "Geben Sie an, ob die Tätigkeit nur einmalig ausführbar ist."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "translations",
+    "type": "group",
+    "label": "Translations",
+    "importance": "low",
+    "common": true,
+    "description": "These options allow you to change the translation.",
+    "fields": [
+      {
+        "name": "manual1_headline",
+        "type": "text",
+        "importance": "low",
+        "label": "Translation of the headline of the first manual stage",
+        "default": "Welcome to @appname!"
+      },
+      {
+        "name": "manual1_txt",
+        "type": "text",
+        "importance": "low",
+        "label": "Translation of the first manual stage",
+        "default": "Your tool for digitally checking on your competencies. The goal of @appname is to help you to become aware of your strengths and weaknesses."
+      },
+      {
+        "name": "manual2_headline",
+        "type": "text",
+        "importance": "low",
+        "label": "Translation of the headline of the second manual stage",
+        "default": "Use @appname as many times as you want"
+      },
+      {
+        "name": "manual2_txt",
+        "type": "text",
+        "importance": "low",
+        "label": "Translation of the second manual stage",
+        "default": "Collect and document project related tasks and activities in the treasure box. Many activities can be completed more than once."
+      },
+      {
+        "name": "manual3_headline",
+        "type": "text",
+        "importance": "low",
+        "label": "Translation of the headline of the third manual stage",
+        "default": "Track your progress"
+      },
+      {
+        "name": "manual3_txt",
+        "type": "text",
+        "importance": "low",
+        "label": "Translation of the third manual stage",
+        "default": "You can see your individual competency-progress by clicking on the trophy-icon. Find out what @appname is offering you..."
+      },
+      {
+        "name": "next_bt_descr",
+        "type": "text",
+        "importance": "low",
+        "label": "Label of the next-button in the manual",
+        "default": "Next"
+      },
+      {
+        "name": "prev_bt_descr",
+        "type": "text",
+        "importance": "low",
+        "label": "Label of the back-button in the manual",
+        "default": "Back"
+      },
+      {
+        "name": "ready_bt_descr",
+        "type": "text",
+        "importance": "low",
+        "label": "Label of the next-button in the last stage of the manual",
+        "default": "Let's go"
+      },
+      {
+        "name": "badge_page_name",
+        "type": "text",
+        "importance": "low",
+        "label": "Titel of the Badge-Page",
+        "default": "Badges"
+      },
+      {
+        "name": "badge_1_name",
+        "type": "text",
+        "importance": "low",
+        "label": "Name of the 1. Badge",
+        "default": "The Beginning"
+      },
+      {
+        "name": "badge_1_descr",
+        "type": "text",
+        "importance": "low",
+        "label": "Description of Badge 1",
+        "default": "Absolve an activity for the first time."
+      },
+      {
+        "name": "badge_2_name",
+        "type": "text",
+        "importance": "low",
+        "label": "Name of the 2. Badge",
+        "default": "Specialist"
+      },
+      {
+        "name": "badge_2_descr",
+        "type": "text",
+        "importance": "low",
+        "label": "Description of Badge 2",
+        "default": "Absolve an activity for at least 5-times."
+      },
+      {
+        "name": "badge_3_name",
+        "type": "text",
+        "importance": "low",
+        "label": "Name of the 3. Badge",
+        "default": "Allrounder"
+      },
+      {
+        "name": "badge_3_descr",
+        "type": "text",
+        "importance": "low",
+        "label": "Description of Badge 3",
+        "default": "Absolve at least one activity from at least one category."
+      },
+      {
+        "name": "badge_4_name",
+        "type": "text",
+        "importance": "low",
+        "label": "Name of the 4. Badge",
+        "default": "Expert"
+      },
+      {
+        "name": "badge_4_descr",
+        "type": "text",
+        "importance": "low",
+        "label": "Description of Badge 4",
+        "default": "Absolve each activity at least one time."
+      },
+      {
+        "name": "badge_5_name",
+        "type": "text",
+        "importance": "low",
+        "label": "Name of the 5. Badge",
+        "default": "Ambitioned"
+      },
+      {
+        "name": "badge_5_descr",
+        "type": "text",
+        "importance": "low",
+        "label": "Description of Badge 5",
+        "default": "Absolve at least 5 activities on a single day."
+      },
+      {
+        "name": "badge_6_name",
+        "type": "text",
+        "importance": "low",
+        "label": "Name of the 6. Badge",
+        "default": "Endurance runner"
+      },
+      {
+        "name": "badge_6_descr",
+        "type": "text",
+        "importance": "low",
+        "label": "Description of Badge 6",
+        "default": "Use the tool every day."
+      },
+      {
+        "name": "badge_7_name",
+        "type": "text",
+        "importance": "low",
+        "label": "Name of the 7. Badge",
+        "default": "Total-Activities"
+      },
+      {
+        "name": "badge_7_descr",
+        "type": "text",
+        "importance": "low",
+        "label": "Description of Badge 7",
+        "default": "Accumulated number of all absolved activities from all skills."
+      },
+      {
+        "name": "badge_8_name",
+        "type": "text",
+        "importance": "low",
+        "label": "Name of the 8. Badge",
+        "default": "Badge Master"
+      },
+      {
+        "name": "badge_8_descr",
+        "type": "text",
+        "importance": "low",
+        "label": "Description of Badge 8",
+        "default": "Total number of all collected badges."
+      },
+      {
+        "name": "badge_locked",
+        "type": "text",
+        "importance": "low",
+        "label": "Marking of locked badge",
+        "default": "Locked"
+      },
+      {
+        "name": "badge_unlocked",
+        "type": "text",
+        "importance": "low",
+        "label": "Marking of unlocked badge",
+        "default": "Unlocked"
+      },
+      {
+        "name": "badge_lvl_unlocked",
+        "type": "text",
+        "importance": "low",
+        "label": "Marking of unlocked badges level",
+        "default": "Unlocked: Level @level"
+      },
+      {
+        "name": "skills_headline",
+        "type": "text",
+        "importance": "low",
+        "label": "Titel of the skills-page",
+        "default": "Skills"
+      },
+      {
+        "name": "remaining_activities_for_lvl",
+        "type": "text",
+        "importance": "low",
+        "label": "Explanation of the remaining activities to reach the next level",
+        "default": "Absolve @remainingActivities more activities to reach the next level"
+      },
+      {
+        "name": "max_lvl_reached",
+        "type": "text",
+        "importance": "low",
+        "label": "Explanation that the maximum level has been reached",
+        "default": "You have reached the maximum Level!"
+      },
+      {
+        "name": "activity",
+        "type": "text",
+        "importance": "low",
+        "label": "Translation for Activity",
+        "default": "Activity"
+      },
+      {
+        "name": "absolved_at",
+        "type": "text",
+        "importance": "low",
+        "label": "Absolved date description",
+        "default": "Absolved at @date"
+      },
+      {
+        "name": "last_absolved",
+        "type": "text",
+        "importance": "low",
+        "label": "Last absolved description",
+        "default": "Last absolved at @date"
+      },
+      {
+        "name": "absolved_activities",
+        "type": "text",
+        "importance": "low",
+        "label": "Headline for absolved activities",
+        "default": "Absolved activities"
+      },
+      {
+        "name": "not_absolved_activities",
+        "type": "text",
+        "importance": "low",
+        "label": "Headline for not absolved activities",
+        "default": "Remaining activities"
+      },
+      {
+        "name": "absolve_bt_label",
+        "type": "text",
+        "importance": "low",
+        "label": "Labeling of the absolve-activity-button",
+        "default": "Absolve activity"
+      },
+      {
+        "name": "undo_absolve_bt_label",
+        "type": "text",
+        "importance": "low",
+        "label": "Labeling of the undo-absolving-button",
+        "default": "Undo absolving"
+      },
+      {
+        "name": "status_absolved",
+        "type": "text",
+        "importance": "low",
+        "label": "Labeling of the absolved-status",
+        "default": "Status: Absolved"
+      },
+      {
+        "name": "status_not_absolved",
+        "type": "text",
+        "importance": "low",
+        "label": "Labeling of the not-absolved-status",
+        "default": "Status: Not absolved"
+      },
+      {
+        "name": "status_x_times_absolved",
+        "type": "text",
+        "importance": "low",
+        "label": "Labeling of the x-times-absolved-status",
+        "default": "Status: @times -times absolved"
+      },
+      {
+        "name": "dev_graph_bt_label",
+        "type": "text",
+        "importance": "low",
+        "label": "Labeling of the development-graph-button",
+        "default": "Development"
+      },
+      {
+        "name": "dev_graph_x_axis_label",
+        "type": "text",
+        "importance": "low",
+        "label": "X-Axis label of the development-graph",
+        "default": "Time in @unit (@firstActivityDate until today)"
+      },
+      {
+        "name": "dev_graph_y_axis_label",
+        "type": "text",
+        "importance": "low",
+        "label": "Y-Axis label of the development-graph",
+        "default": "Acc. absolved activities (today @totalAccActivities)"
+      },
+      {
+        "name": "unit_days",
+        "type": "text",
+        "importance": "low",
+        "label": "Unit name for days",
+        "default": "days"
+      },
+      {
+        "name": "unit_weeks",
+        "type": "text",
+        "importance": "low",
+        "label": "Unit name for weeks",
+        "default": "weeks"
+      },
+      {
+        "name": "message_successfully_completed_activity",
+        "type": "text",
+        "importance": "low",
+        "label": "Message that gets shown when completing an activity was successful",
+        "default": "Activity successfully completed"
+      },
+      {
+        "name": "message_successfully_undone_activity",
+        "type": "text",
+        "importance": "low",
+        "label": "Message that gets shown when undoing an activity was successful",
+        "default": "Activity completion successfully undone"
+      },
+      {
+        "name": "message_activity_already_absolved",
+        "type": "text",
+        "importance": "low",
+        "label": "Message that gets shown when an activity was already absolved",
+        "default": "Activity was already absolved"
+      },
+      {
+        "name": "achievement_congratulations",
+        "type": "text",
+        "importance": "low",
+        "label": "Headline of the modal that gets shown when an achievement is made.",
+        "default": "Congratulations!"
+      },
+      {
+        "name": "achievement_badge_txt",
+        "type": "text",
+        "importance": "low",
+        "label": "Text of the modal that gets shown when an new badge was earned.",
+        "default": "You earned a new badge: @badgeName"
+      },
+      {
+        "name": "achievement_skill_txt",
+        "type": "text",
+        "importance": "low",
+        "label": "Text of the modal that gets shown when a new skill-level is reached.",
+        "default": "You reached level @newLvl of the Skill @skillName."
+      },
+      {
+        "name": "button_label_main_page",
+        "type": "text",
+        "importance": "low",
+        "label": "(Aria-)Description of the Button that opens the Main-Page",
+        "default": "Change to activity page"
+      },
+      {
+        "name": "button_label_close_modal",
+        "type": "text",
+        "importance": "low",
+        "label": "(Aria-)Description of the Button that closes a modal",
+        "default": "Close modal"
+      },
+      {
+        "name": "button_label_manual",
+        "type": "text",
+        "importance": "low",
+        "label": "(Aria-)Description of the Button that opens the manual",
+        "default": "Open the manual"
+      },
+      {
+        "name": "button_label_fullscreen",
+        "type": "text",
+        "importance": "low",
+        "label": "(Aria-)Description of the Button that toggles the fullscreen-mode",
+        "default": "Open the app in fullscreen"
+      },
+      {
+        "name": "button_label_badges_page",
+        "type": "text",
+        "importance": "low",
+        "label": "(Aria-)Description of the Button that opens the badges-page",
+        "default": "Change to badges-page"
+      },
+      {
+        "name": "button_label_skills_page",
+        "type": "text",
+        "importance": "low",
+        "label": "(Aria-)Description of the Button that opens the skills-page",
+        "default": "Change to skills-page"
+      },
+      {
+        "name": "button_label_skill_details",
+        "type": "text",
+        "importance": "low",
+        "label": "(Aria-)Description of the Button that opens the details of a skill",
+        "default": "See details of progress for the skill @skillName"
+      },
+      {
+        "name": "button_label_badge_details",
+        "type": "text",
+        "importance": "low",
+        "label": "(Aria-)Description of the Button that opens the details of a badge",
+        "default": "See details of progress for the badge @badgeName"
+      },
+      {
+        "name": "button_label_change_activity_status",
+        "type": "text",
+        "importance": "low",
+        "label": "(Aria-)Description of the Button that opens the modal which allows to absolve/redo absolving an activity",
+        "default": "Edit activity status of  @activitydescr"
+      },
+      {
+        "name": "badge_img_label",
+        "type": "text",
+        "importance": "low",
+        "label": "(Aria-)Description of the image of a badge",
+        "default": "Image of the badge @badgeName"
+      }
+    ]
+  }
+]
+
+
+

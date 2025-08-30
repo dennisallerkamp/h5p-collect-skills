@@ -1,0 +1,24 @@
+@import "@styles/colors";
+@import "Button";
+
+.fullscreen-button, .fullscreen-exit-button {
+  @extend .btn;
+}
+
+.fullscreen-button:before,
+.fullscreen-exit-button:before{
+  margin-left: 5px;
+  font-family: 'H5PFontAwesome4', sans-serif;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.fullscreen-button:before {
+  margin: 0;
+  content: '';
+}
+
+.fullscreen-exit-button:before {
+  margin: 0;
+  content: '';
+}

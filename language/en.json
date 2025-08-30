@@ -1,0 +1,300 @@
+{
+  "semantics": [
+    {
+      "label": "Skills",
+      "entity": "Category",
+      "field": {
+        "label": "Skill settings",
+        "fields": [
+          {
+            "label": "Skill name",
+            "description": "Enter a name for this skill."
+          },
+          {
+            "label": "Skill image",
+            "description": "Upload an image for this skill. The image should...\n...have a size of at least 128x128 pixels.\n...be square.\n...have a transparent background (if possible)."
+          },
+          {
+            "label": "Activity",
+            "entity": "Activity",
+            "widgets": [
+              {
+                "label": "Default"
+              }
+            ],
+            "field": {
+              "label": "Activity settings",
+              "fields": [
+                {
+                  "label": "Activity text",
+                  "placeholder": "I worked in international groups."
+                },
+                {
+                  "label": "One-time Activity",
+                  "description": "Declare if this activity can be completed only once."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Translations",
+      "fields": [
+        {
+          "label": "Translation of the headline of the first manual stage",
+          "default": "Welcome to @appname!"
+        },
+        {
+          "label": "Translation of the first manual stage",
+          "default": "Your tool for digitally checking on your competencies. The goal of @appname is to help you to become aware of your strengths and weaknesses."
+        },
+        {
+          "label": "Translation of the headline of the second manual stage",
+          "default": "Use @appname as many times as you want"
+        },
+        {
+          "label": "Translation of the second manual stage",
+          "default": "Collect and document project related tasks and activities in the treasure box. Many activities can be completed more than once."
+        },
+        {
+          "label": "Translation of the headline of the third manual stage",
+          "default": "Track your progress"
+        },
+        {
+          "label": "Translation of the third manual stage",
+          "default": "You can see your individual competency-progress by clicking on the trophy-icon. Find out what @appname is offering you..."
+        },
+        {
+          "label": "Label of the next-button in the manual",
+          "default": "Next"
+        },
+        {
+          "label": "Label of the back-button in the manual",
+          "default": "Back"
+        },
+        {
+          "label": "Label of the next-button in the last stage of the manual",
+          "default": "Let's go"
+        },
+        {
+          "label": "Titel of the Badge-Page",
+          "default": "Badges"
+        },
+        {
+          "label": "Name of the 1. Badge",
+          "default": "The Beginning"
+        },
+        {
+          "label": "Description of Badge 1",
+          "default": "Absolve an activity for the first time."
+        },
+        {
+          "label": "Name of the 2. Badge",
+          "default": "Specialist"
+        },
+        {
+          "label": "Description of Badge 2",
+          "default": "Absolve an activity for at least 5-times."
+        },
+        {
+          "label": "Name of the 3. Badge",
+          "default": "Allrounder"
+        },
+        {
+          "label": "Description of Badge 3",
+          "default": "Absolve at least one activity from at least each skill."
+        },
+        {
+          "label": "Name of the 4. Badge",
+          "default": "Expert"
+        },
+        {
+          "label": "Description of Badge 4",
+          "default": "Absolve each activity at least one time."
+        },
+        {
+          "label": "Name of the 5. Badge",
+          "default": "Ambitioned"
+        },
+        {
+          "label": "Description of Badge 5",
+          "default": "Absolve at least 5 activities on a single day."
+        },
+        {
+          "label": "Name of the 6. Badge",
+          "default": "Endurance runner"
+        },
+        {
+          "label": "Description of Badge 6",
+          "default": "Use the tool every day."
+        },
+        {
+          "label": "Name of the 7. Badge",
+          "default": "Total-Activities"
+        },
+        {
+          "label": "Description of Badge 7",
+          "default": "Accumulated number of all absolved activities from all skills."
+        },
+        {
+          "label": "Name of the 8. Badge",
+          "default": "Badge Master"
+        },
+        {
+          "label": "Description of Badge 8",
+          "default": "Total number of all collected badges."
+        },
+        {
+          "label": "Marking of locked badge",
+          "default": "Locked"
+        },
+        {
+          "label": "Marking of unlocked badge",
+          "default": "Unlocked"
+        },
+        {
+          "label": "Marking of unlocked badges level",
+          "default": "Unlocked: Level @level"
+        },
+        {
+          "label": "Titel of the skills-page",
+          "default": "Skills"
+        },
+        {
+          "label": "Explanation of the remaining activities to reach the next level",
+          "default": "Absolve @remainingActivities more activities to reach the next level"
+        },
+        {
+          "label": "Explanation that the maximum level has been reached",
+          "default": "You have reached the maximum Level!"
+        },
+        {
+          "label": "Translation for Activity",
+          "default": "Activity"
+        },
+        {
+          "label": "Absolved date description",
+          "default": "Absolved at @date"
+        },
+        {
+          "label": "Last absolved description",
+          "default": "Last absolved at @date"
+        },
+        {
+          "label": "Headline for absolved activities",
+          "default": "Absolved activities"
+        },
+        {
+          "label": "Headline for not absolved activities",
+          "default": "Remaining activities"
+        },
+        {
+          "label": "Labeling of the absolve-activity-button",
+          "default": "Absolve activity"
+        },
+        {
+          "label": "Labeling of the undo-absolving-button",
+          "default": "Undo absolving"
+        },
+        {
+          "label": "Labeling of the absolved-status",
+          "default": "Absolved"
+        },
+        {
+          "label": "Labeling of the not-absolved-status",
+          "default": "Not absolved"
+        },
+        {
+          "label": "Labeling of the x-times-absolved-status",
+          "default": "@times times absolved"
+        },
+        {
+          "label": "Labeling of the development-graph-button",
+          "default": "Development"
+        },
+        {
+          "label": "X-Axis label of the development-graph",
+          "default": "Time in @unit (@firstActivityDate until today)"
+        },
+        {
+          "label": "Y-Axis label of the development-graph",
+          "default": "Acc. absolved activities (today @totalAccActivities)"
+        },
+        {
+          "label": "Unit name for days",
+          "default": "days"
+        },
+        {
+          "label": "Unit name for weeks",
+          "default": "weeks"
+        },
+        {
+          "label": "Message that gets shown when completing an activity was successful",
+          "default": "Activity successfully completed"
+        },
+        {
+          "label": "Message that gets shown when undoing an activity was successful",
+          "default": "Activity completion successfully undone"
+        },
+        {
+          "label": "Message that gets shown when an activity was already absolved",
+          "default": "Activity was already absolved"
+        },
+        {
+          "label": "Headline of the modal that gets shown when an achievement is made.",
+          "default": "Congratulations!"
+        },
+        {
+          "label": "Text of the modal that gets shown when an new badge was earned.",
+          "default": "You earned a new badge: @badgeName"
+        },
+        {
+          "label": "Text of the modal that gets shown when a new skill-level is reached.",
+          "default": "You reached level @newLvl of the Skill @skillName."
+        },
+        {
+          "label": "(Aria-)Description of the Button that opens the Main-Page",
+          "default": "Change to activity page"
+        },
+        {
+          "label": "(Aria-)Description of the Button that closes a modal",
+          "default": "Close modal"
+        },
+        {
+          "label": "(Aria-)Description of the Button that opens the manual",
+          "default": "Open the manual"
+        },
+        {
+          "label": "(Aria-)Description of the Button that toggles the fullscreen-mode",
+          "default": "Open the app in fullscreen"
+        },
+        {
+          "label": "(Aria-)Description of the Button that opens the badges-page",
+          "default": "Change to badges-page"
+        },
+        {
+          "label": "(Aria-)Description of the Button that opens the skills-page",
+          "default": "Change to skills-page"
+        },
+        {
+          "label": "(Aria-)Description of the Button that opens the details of a skill",
+          "default": "See details of progress for the skill @skillName"
+        },
+        {
+          "label": "(Aria-)Description of the Button that opens the details of a badge",
+          "default": "See details of progress for the badge @badgeName"
+        },
+        {
+          "label": "(Aria-)Description of the Button that opens the modal which allows to absolve/redo absolving an activity",
+          "default": "Edit activity status of  @activitydescr"
+        },
+        {
+          "label": "(Aria-)Description of the image of a badge",
+          "default": "Image of the badge @badgeName"
+        }
+      ]
+    }
+  ]
+}
